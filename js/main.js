@@ -9,7 +9,6 @@ function docReady(fn) {
 }
 docReady(function() {
     document.getElementById('crowd').volume=0;
-    document.getElementById('crowd').play();
 });
 document.documentElement.style.setProperty('--perspect','300px');
 document.documentElement.style.setProperty('--origin','650px');
@@ -46,6 +45,7 @@ document.getElementsByClassName('button')[0].onclick =()=> {
     }
 };
 document.onkeydown=(e) => {
+    document.getElementById('crowd').play();
     document.getElementById('crowd').loop=true;
     if(shooting)return;
     shooting=true;
