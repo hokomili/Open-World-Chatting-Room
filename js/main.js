@@ -83,7 +83,7 @@ document.onkeydown=(e) => {
             break;
             case"KeyA":
             var char=document.getElementById("character")
-            char.style['backgroundImage']=('url(../images/doll2.png)')
+            char.style['backgroundImage']=('url(images/doll2.png)')
             document.documentElement.style.setProperty('--origin',parseInt(ori.slice(0,-2))-1+'px');
             document.documentElement.style.setProperty('--positionX',parseInt(posX.slice(0,-2))+10+'px');
             document.documentElement.style.setProperty('--cpositionX',parseInt(cposX.slice(0,-2))-10+'px');
@@ -94,7 +94,7 @@ document.onkeydown=(e) => {
             document.documentElement.style.setProperty('--cpositionZ',parseInt(cposZ.slice(0,-2))+10+'px');
             break;
             case"KeyD":var char=document.getElementById("character")
-            char.style['backgroundImage']=('url(../images/doll1.png)')
+            char.style['backgroundImage']=('url(images/doll1.png)')
             document.documentElement.style.setProperty('--origin',parseInt(ori.slice(0,-2))+1+'px');
             document.documentElement.style.setProperty('--positionX',parseInt(posX.slice(0,-2))-10+'px');
             document.documentElement.style.setProperty('--cpositionX',parseInt(cposX.slice(0,-2))+10+'px');
