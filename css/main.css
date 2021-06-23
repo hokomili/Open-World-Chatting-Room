@@ -10,6 +10,25 @@ body{
   margin:0;
   overflow:hidden;
 }
+.button{
+  position: absolute;
+  z-index:100;
+  margin: 20px 20px;
+  height: 60px;
+  width: 80px;
+  border-radius: 20px;
+  border:4px solid #e7d6d29d;
+  background-color: #534440;
+  cursor: pointer;
+}
+.coverer{
+  position:absolute;
+  z-index: 11;
+  width:300px;
+  height: 100vh;
+  transform:translateX(-300px);
+  background-color: #534440;
+}
 .face {
     position: absolute;
     line-height: 100px;
@@ -39,6 +58,14 @@ body{
   .naw2{
     width:1200px;
     height:600px
+  }
+  .boombox{
+    width: 400px;
+    height: 200px;
+    border-radius: 60px;
+    z-index: 10;
+    transform: translate3d(0px, 400px, 800px);
+    background: rgba(61, 59, 59, 0.986);
   }
   .bloom{
     position: absolute;
@@ -122,8 +149,9 @@ body{
     transform: translate3d(-2000px,0, -200px);
   }
   .character{
-    width: 100px;
-    height: 200px;
-    background-color: limegreen;
-    transform: translate3d(var(--cpositionX),400px,var(--cpositionZ));
+    width: 200px;
+    height: 400px;
+    background-size: 200px;
+    background-image: url(../images/doll1.png);
+    transform: translate3d(var(--cpositionX),200px,var(--cpositionZ));
   }

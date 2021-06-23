@@ -9,8 +9,10 @@
 </head>
 <body>
     <div class="bloom"></div>
+    <div class="button"></div>
+    <div class="coverer"></div>
     <div class="perspective-box-closer">
-        <div class="face character">I</div>
+        <div id="character" class="face character"></div>
         <div class="face front-l half"></div>
         <div class="face front-r half"></div>
         <div class="face top ceiling"></div>
@@ -24,7 +26,11 @@
         <div class="face left2 naw2"></div>
         <div class="face right2 naw2"></div>
         <div class="face bottom2 ceiling2"></div>
-        <div class="face">G</div>
+        <div class="face boombox">
+            <audio id="crowd">
+                <source src="./audio/crowd.wav" type="audio/wav">
+            </audio>
+        </div>
     </div>
 </body>
     <script src="./js/main.js"></script>
