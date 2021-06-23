@@ -17,7 +17,8 @@ document.getElementsByClassName('button')[0].onclick =()=> {
             if(runtime==0){
                 clearInterval(covering);
             }
-            document.getElementsByClassName('coverer')[0].style['transform']=('translateX('+(-300+runtime*12)+'px)')
+            document.getElementsByClassName('coverer')[0].style['transform']=('translateX('+(-400+runtime*16)+'px)')
+            document.getElementsByClassName('coverer2')[0].style['transform']=('translateX('+(-2000+runtime*80)+'px)')
         }),1);
     }
     else{
@@ -26,7 +27,8 @@ document.getElementsByClassName('button')[0].onclick =()=> {
             if(runtime>24){
                 clearInterval(covering);
             }
-            document.getElementsByClassName('coverer')[0].style['transform']=('translateX('+(-300+runtime*12)+'px)')
+            document.getElementsByClassName('coverer')[0].style['transform']=('translateX('+(-400+runtime*16)+'px)')
+            document.getElementsByClassName('coverer2')[0].style['transform']=('translateX('+(-2000+runtime*80)+'px)')
         }),1);
     }
 };

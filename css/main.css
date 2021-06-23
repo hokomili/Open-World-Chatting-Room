@@ -23,11 +23,19 @@ body{
 }
 .coverer{
   position:absolute;
-  z-index: 11;
-  width:300px;
+  z-index: 12;
+  width:400px;
   height: 100vh;
-  transform:translateX(-300px);
+  transform:translateX(-400px);
   background-color: #534440;
+}
+.coverer2{
+  position:absolute;
+  z-index: 11;
+  width:2000px;
+  height: 100vh;
+  transform:translateX(-2000px);
+  background-color: #53444069;
 }
 .face {
     position: absolute;
@@ -55,16 +63,20 @@ body{
     width:800px;
     height:1200px;
   }
+  .infront{
+    width:800px;
+    height:600px
+  }
   .naw2{
     width:1200px;
     height:600px
   }
   .boombox{
-    width: 400px;
-    height: 200px;
+    width: 200px;
+    height: 100px;
     border-radius: 60px;
     z-index: 10;
-    transform: translate3d(0px, 400px, 800px);
+    transform: translate3d(100px, 500px, 800px);
     background: rgba(61, 59, 59, 0.986);
   }
   .bloom{
@@ -81,7 +93,7 @@ body{
     height: 400px;
     border-radius: 100%;
     z-index: 10;
-    transform: translate3d(-200px, 0, -100px);
+    transform: translate3d(190px, 10px, -180px);
     background: rgb(249,247,242);
     background: radial-gradient(circle, rgba(249,247,242,0.9) 0%, rgba(245,222,103,0.5) 30%, rgba(238,206,59,0) 60%);
   }
@@ -102,7 +114,11 @@ body{
     opacity: 1;
     transform: rotateX(90deg) translate3d(-400px, 800px,600px);
   }
-  
+  .front2{
+    background-color: white;
+    opacity: 0.77;
+    transform: translate3d(-400px,0, 1400px);
+  }
   .left {
     background-color: lightyellow;
     opacity: 0.4;
@@ -114,18 +130,18 @@ body{
     transform: rotateY(-90deg) translate3d(800px,0,1000px);
   }
   .front-l {
-    background-color: orange;
-    opacity: 0.2;
+    background-color: white;
+    opacity: 0.7;
     transform: translate3d(-2000px,0, 200px);
   }
   .front-r {
-    background-color: orange;
-    opacity: 0.2;
+    background-color: white;
+    opacity: 0.7;
     transform: translate3d(400px,0, 200px);
   }
   .right {
     background-color: lightyellow;
-    opacity: 0.4;
+    opacity: 0.5;
     transform: rotateY(90deg) translate3d(0,0, 1800px);
   }
   .right2 {
@@ -154,4 +170,52 @@ body{
     background-size: 200px;
     background-image: url(../images/doll1.png);
     transform: translate3d(var(--cpositionX),200px,var(--cpositionZ));
+  }
+  .air{
+    width: 400px;
+    height: 110px;
+    background-size: 400px;
+    background-image: url(../images/air.png);
+    transform: rotateY(-90deg) translate3d(400px,-250px,580px);
+  }
+  .chair{
+    width: 100px;
+    height: 180px;
+    background-size: 100px;
+    background-image: url(../images/chair.png);
+    transform: translate3d(120px,200px,500px);
+  }
+  .desk{
+    width: 400px;
+    height: 250px;
+    background-size: 400px;
+    background-image: url(../images/desk.png);
+    transform: rotateY(90deg) translate3d(-400px,100px,120px);
+  }
+  .door{
+    width: 160px;
+    height:360px;
+    background-size: 160px;
+    background-image: url(../images/door.png);
+    transform: rotateY(-90deg) translate3d(400px,200px,466px);
+  }
+  .sofa{
+    width: 600px;
+    height: 200px;
+    background-size: 600px;
+    background-image: url(../images/sofa.png);
+    transform: translate3d(800px,400px,-180px);
+  }
+  .window{
+    width: 400px;
+    height: 320px;
+    background-size: 400px;
+    background-image: url(../images/window.png);
+    transform: translate3d(200px,50px,-190px);
+  }
+  .outside{
+    width: 260px;
+    height: 260px;
+    background-color:skyblue;
+    transform: translate3d(270px,80px,-195px);
   }
