@@ -1,13 +1,14 @@
 :root{
-    --perspect:200px;
-    --origin:0px;
+    --perspect:300px;
+    --origin:650px;
     --positionX:0px;
-    --positionZ:20px;
-    --cpositionX:-600px;
-    --cpositionZ:-20px;
+    --positionZ:0px;
+    --cpositionX:650px;
+    --cpositionZ:0px;
 }
 body{
-    overflow:hidden;
+  margin:0;
+  overflow:hidden;
 }
 .face {
     position: absolute;
@@ -27,53 +28,102 @@ body{
       width:4000px;
       height:600px;
   }
-  p + div {
-    width: 100px;
-    height: 100px;
-    transform-style: preserve-3d;
-    margin-left: 200px;
+  .half{
+    width: 1600px;
+    height:600px;
+  }
+  .ceiling2{
+    width:800px;
+    height:1200px;
+  }
+  .naw2{
+    width:1200px;
+    height:600px
+  }
+  .bloom{
+    position: absolute;
+    backdrop-filter: drop-shadow(4px 4px 10px blue);
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(249,247,242);
+    background: radial-gradient(circle, rgba(249,247,242,0) 0%, rgba(241,228,156,0.33126754119616597) 50%, rgba(238,206,59,0.5665616588432247) 100%);
+  }
+  .light{
+    width: 400px;
+    height: 400px;
+    border-radius: 100%;
+    z-index: 10;
+    transform: translate3d(-200px, 0, -100px);
+    background: rgb(249,247,242);
+    background: radial-gradient(circle, rgba(249,247,242,0.9) 0%, rgba(245,222,103,0.5) 30%, rgba(238,206,59,0) 60%);
   }
   .perspective-box-closer {
+    height: 300px;
+    transform-style: preserve-3d;
     transform: perspective(var(--perspect)) translate3d(var(--positionX),0,var(--positionZ));
     transform-origin: var(--origin);
   }
   
   .top {
-    background-color: skyblue;
-    opacity: 0.4;
+    background-color: lightgrey;
+    opacity: 1;
     transform: rotateX(90deg) translate3d(-2000px, 0, 200px);
+  }
+  .top2 {
+    background-color: lightgrey;
+    opacity: 1;
+    transform: rotateX(90deg) translate3d(-400px, 800px,600px);
   }
   
   .left {
-    background-color: pink;
+    background-color: lightyellow;
     opacity: 0.4;
     transform: rotateY(-90deg) translate3d(0,0, 2200px);
   }
-  
-  .front {
-    background-color: limegreen;
+  .left2 {
+    background-color: lightyellow;
+    opacity: 1;
+    transform: rotateY(-90deg) translate3d(800px,0,1000px);
+  }
+  .front-l {
+    background-color: orange;
     opacity: 0.2;
     transform: translate3d(-2000px,0, 200px);
+  }
+  .front-r {
+    background-color: orange;
+    opacity: 0.2;
+    transform: translate3d(400px,0, 200px);
   }
   .right {
     background-color: lightyellow;
     opacity: 0.4;
     transform: rotateY(90deg) translate3d(0,0, 1800px);
   }
+  .right2 {
+    background-color: lightyellow;
+    opacity: 1;
+    transform: rotateY(90deg) translate3d(-800px,0,-200px);
+  }
   .bottom {
-    background-color: mediumpurple;
-    opacity: 0.4;
+    background-color: lightgrey;
+    opacity: 1;
     transform: rotateX(-90deg) translate3d(-2000px, 0, 400px);
   }
+  .bottom2 {
+    background-color: lightgrey;
+    opacity: 1;
+    transform: rotateX(-90deg) translate3d(-400px, -800px, 00px);
+  }
   .back {
-    background-color: orange;
-    opacity: 0.8;
+    background-color:limegreen;
+    opacity: 1;
     transform: translate3d(-2000px,0, -200px);
   }
   .character{
     width: 100px;
     height: 200px;
     background-color: limegreen;
-    opacity: 0.8;
     transform: translate3d(var(--cpositionX),400px,var(--cpositionZ));
   }

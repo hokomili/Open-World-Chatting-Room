@@ -1,8 +1,8 @@
-document.documentElement.style.setProperty('--perspect','200px');
+document.documentElement.style.setProperty('--perspect','300px');
 document.documentElement.style.setProperty('--origin','650px');
 document.documentElement.style.setProperty('--positionX','0px');
 document.documentElement.style.setProperty('--positionZ','0px');
-document.documentElement.style.setProperty('--cpositionX','500px');
+document.documentElement.style.setProperty('--cpositionX','650px');
 document.documentElement.style.setProperty('--cpositionZ','0px');
 var shooting=false;
 var eventkey
@@ -22,8 +22,8 @@ document.onkeydown=(e) => {
         switch(code){
             case"KeyW":
             document.documentElement.style.setProperty('--perspect',parseInt(distant.slice(0,-2))-1+'px');
-            document.documentElement.style.setProperty('--positionZ',parseInt(posZ.slice(0,-2))+2+'px');
-            document.documentElement.style.setProperty('--cpositionZ',parseInt(cposZ.slice(0,-2))-2+'px');
+            document.documentElement.style.setProperty('--positionZ',parseInt(posZ.slice(0,-2))+10+'px');
+            document.documentElement.style.setProperty('--cpositionZ',parseInt(cposZ.slice(0,-2))-10+'px');
             break;
             case"KeyA":
             document.documentElement.style.setProperty('--origin',parseInt(ori.slice(0,-2))-1+'px');
@@ -32,8 +32,8 @@ document.onkeydown=(e) => {
             break;
             case"KeyS":
             document.documentElement.style.setProperty('--perspect',parseInt(distant.slice(0,-2))+1+'px');
-            document.documentElement.style.setProperty('--positionZ',parseInt(posZ.slice(0,-2))-2+'px');
-            document.documentElement.style.setProperty('--cpositionZ',parseInt(cposZ.slice(0,-2))+2+'px');
+            document.documentElement.style.setProperty('--positionZ',parseInt(posZ.slice(0,-2))-10+'px');
+            document.documentElement.style.setProperty('--cpositionZ',parseInt(cposZ.slice(0,-2))+10+'px');
             break;
             case"KeyD":
             document.documentElement.style.setProperty('--origin',parseInt(ori.slice(0,-2))+1+'px');
