@@ -1,3 +1,16 @@
+function docReady(fn) {
+    // see if DOM is already available
+    if (document.readyState === "complete" || document.readyState === "interactive") {
+        // call on next available tick
+        setTimeout(fn, 1);
+    } else {
+        document.addEventListener("DOMContentLoaded", fn);
+    }
+}
+docReady(function() {
+    document.getElementById('crowd').volume=0;
+    document.getElementById('crowd').play();
+});
 document.documentElement.style.setProperty('--perspect','300px');
 document.documentElement.style.setProperty('--origin','650px');
 document.documentElement.style.setProperty('--positionX','0px');
@@ -32,10 +45,8 @@ document.getElementsByClassName('button')[0].onclick =()=> {
         }),1);
     }
 };
-document.getElementById('crowd').volume=0;
-document.getElementById('crowd').play();
-document.getElementById('crowd').loop=true;
 document.onkeydown=(e) => {
+    document.getElementById('crowd').loop=true;
     if(shooting)return;
     shooting=true;
     var code=e.code;
